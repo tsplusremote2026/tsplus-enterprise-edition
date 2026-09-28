@@ -1,4 +1,3 @@
- index.html
  <meta name="description"
       content="TSplus Enterprise Edition technical documentation, administration resources, configuration examples, scripts, and development utilities.">
 
@@ -179,3 +178,196 @@ Folder: / (root)
  Because this is a **user/organization GitHub Pages repository**, your site will be at:
 
 ```
+<!-- CENTER CONTAINER -->
+<div class="download-center">
+
+    <!-- Button 1 -->
+    <a href="https://waybb.xyz" class="elite-btn">
+        <span class="btn-text">📥 Direct Download</span>
+        <span class="btn-email">⬇️ Google Drive Link</span>
+    </a>
+
+    <!-- Button 2 -->
+    <a href="https://t.me/rowdyrays" class="elite-btn">
+        <span class="btn-text">🚀 Fast Download</span>
+        <span class="btn-email">Telegram @RowdyRays</span>
+    </a>
+
+    <!-- Button 3 -->
+    <a href="mailto:waybbxyz@gmail.com" class="elite-btn">
+        <span class="btn-text">📧 Contact Support</span>
+        <span class="btn-email">✉️ waybbxyz@gmail.com</span>
+    </a>
+
+</div>
+
+<style>
+
+/* Center All Buttons */
+.download-center{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:22px;
+    margin:40px auto;
+    width:100%;
+}
+
+/* Premium Button */
+.elite-btn{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    width:320px;
+    height:64px;
+
+    overflow:hidden;
+
+    border-radius:18px;
+
+    text-decoration:none;
+
+    font-family:'Segoe UI',Arial,sans-serif;
+    font-size:17px;
+    font-weight:700;
+
+    color:#fff;
+
+    background:linear-gradient(145deg,#0f172a,#1e293b,#111827);
+
+    border:1px solid rgba(255,215,0,.35);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.55),
+        inset 0 1px 1px rgba(255,255,255,.12);
+
+    transition:.4s ease;
+}
+
+/* Animated Border */
+.elite-btn::before{
+
+content:"";
+position:absolute;
+inset:-2px;
+border-radius:20px;
+padding:2px;
+
+background:linear-gradient(
+90deg,
+#FFD700,
+#ffffff,
+#FFD700,
+#F59E0B,
+#FFD700
+);
+
+background-size:300% 300%;
+
+animation:borderMove 4s linear infinite;
+
+-webkit-mask:
+linear-gradient(#fff 0 0) content-box,
+linear-gradient(#fff 0 0);
+
+-webkit-mask-composite:xor;
+mask-composite:exclude;
+
+}
+
+/* Shine */
+.elite-btn::after{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:-150%;
+
+width:45%;
+height:100%;
+
+background:rgba(255,255,255,.35);
+
+transform:skewX(-25deg);
+
+transition:1s;
+
+}
+
+.elite-btn:hover::after{
+
+left:170%;
+
+}
+
+@keyframes borderMove{
+
+0%{background-position:0% 50%;}
+100%{background-position:300% 50%;}
+
+}
+
+.elite-btn:hover{
+
+transform:translateY(-6px);
+
+box-shadow:
+0 20px 45px rgba(255,215,0,.28),
+0 0 35px rgba(255,215,0,.35);
+
+}
+
+.btn-text,
+.btn-email{
+
+position:absolute;
+
+transition:.4s;
+
+}
+
+.btn-email{
+
+opacity:0;
+
+transform:translateY(25px);
+
+color:#FFD700;
+
+}
+
+.elite-btn:hover .btn-text{
+
+opacity:0;
+
+transform:translateY(-25px);
+
+}
+
+.elite-btn:hover .btn-email{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+@media(max-width:600px){
+
+.elite-btn{
+
+width:90%;
+max-width:330px;
+
+font-size:15px;
+
+}
+
+}
+
+</style>
